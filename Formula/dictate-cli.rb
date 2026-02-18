@@ -12,7 +12,8 @@ class DictateCli < Formula
     (bin/"dictate").write_env_script libexec/"dictate", DICTATE_LIB_PATH: libexec/"dictate-lib.sh"
     bin.install_symlink libexec/"dictate-lib.sh" => "dictate-lib.sh"
 
-    pkgshare.install "config", "integrations", "assets", "tools", "install.sh", "bootstrap.sh", "README.md", "CHANGELOG.md"
+    pkgshare.install "config", "integrations", "assets", "tools"
+    pkgshare.install "install.sh", "bootstrap.sh", "README.md", "CHANGELOG.md"
   end
 
   def caveats
