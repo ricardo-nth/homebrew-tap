@@ -1,8 +1,8 @@
 class DictateCli < Formula
   desc "Local-first macOS dictation CLI using whisper.cpp"
   homepage "https://github.com/ricardo-nth/dictate-cli"
-  url "https://github.com/ricardo-nth/dictate-cli/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "c8a4186839e9f1d9051d61b6940b11935734a8134825edeb97312d51c0fe8a84"
+  url "https://github.com/ricardo-nth/dictate-cli/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "e780a600dd6d3d84f6d32e879dd7b01000b70371eba07e32fffdd315f9b8cd93"
   license "MIT"
 
   depends_on :macos
