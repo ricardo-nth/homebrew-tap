@@ -1,21 +1,21 @@
 # homebrew-tap
 
-Homebrew tap for `dictate-cli`.
+Homebrew tap for `tmux-whisper`.
 
 ## Install
 
 ```bash
 brew tap ricardo-nth/tap
-brew install ricardo-nth/tap/dictate-cli
+brew install ricardo-nth/tap/tmux-whisper
 ```
 
 ## Upgrade
 
 ```bash
 brew update
-brew upgrade dictate-cli
+brew upgrade tmux-whisper
 ```
 
 ## Formula
 
-- `Formula/dictate-cli.rb`
+- `Formula/tmux-whisper.rb`
