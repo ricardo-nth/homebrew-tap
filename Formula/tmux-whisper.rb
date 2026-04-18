@@ -1,8 +1,8 @@
 class TmuxWhisper < Formula
   desc "Tmux-first macOS voice dictation CLI with local ASR backends"
   homepage "https://github.com/ricardo-nth/tmux-whisper"
-  url "https://github.com/ricardo-nth/tmux-whisper/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "7cda9346da217d4a96f959ec04bf34e6998a8304f13184fe2bdcc7d73815b712"
+  url "https://github.com/ricardo-nth/tmux-whisper/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "96ffdc2af3aaaed739cf0a3d2f85cd9c0f47b9515faf3e72d3f30061d6db7d32"
   license "MIT"
 
   depends_on :macos
