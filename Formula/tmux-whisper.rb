@@ -1,8 +1,8 @@
 class TmuxWhisper < Formula
   desc "Tmux-first macOS voice dictation CLI with local ASR backends"
   homepage "https://github.com/ricardo-nth/tmux-whisper"
-  url "https://github.com/ricardo-nth/tmux-whisper/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "96ffdc2af3aaaed739cf0a3d2f85cd9c0f47b9515faf3e72d3f30061d6db7d32"
+  url "https://github.com/ricardo-nth/tmux-whisper/archive/refs/tags/v0.5.2.tar.gz"
+  sha256 "97f988b55d2566624b6a0f2c478f647dc18ce1b15f838e25481137ad43e61e20"
   license "MIT"
 
   depends_on :macos
@@ -32,6 +32,6 @@ class TmuxWhisper < Formula
 
   test do
     output = shell_output("#{bin}/tmux-whisper --help")
-    assert_match "tmux-whisper: local dictation with pluggable ASR backends", output
+    assert_match "tmux-whisper: local dictation for macOS", output
   end
 end
