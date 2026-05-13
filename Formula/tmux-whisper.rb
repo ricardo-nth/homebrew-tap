@@ -4,12 +4,15 @@ class TmuxWhisper < Formula
   url "https://github.com/ricardo-nth/tmux-whisper/archive/refs/tags/v0.6.0.tar.gz"
   sha256 "e95c25b615ad93450e19f402998ec640565bae3c8328813f4f9e95491d2f089d"
   license "MIT"
+  revision 1
 
   depends_on :macos
 
   def install
-    libexec.install "bin/tmux-whisper", "bin/dictate-lib.sh"
-    (bin/"tmux-whisper").write_env_script libexec/"tmux-whisper", DICTATE_LIB_PATH: libexec/"dictate-lib.sh"
+    libexec.install "bin/tmux-whisper", "bin/dictate-lib.sh", "bin/tmux-whisper-lib"
+    (bin/"tmux-whisper").write_env_script libexec/"tmux-whisper",
+      DICTATE_LIB_PATH: libexec/"dictate-lib.sh",
+      DICTATE_INTERNAL_LIB_DIR: libexec/"tmux-whisper-lib"
     bin.install_symlink libexec/"dictate-lib.sh" => "dictate-lib.sh"
 
     pkgshare.install "config", "integrations", "assets", "tools"
