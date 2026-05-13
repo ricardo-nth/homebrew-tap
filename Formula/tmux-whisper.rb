@@ -13,7 +13,7 @@ class TmuxWhisper < Formula
     (bin/"tmux-whisper").write_env_script(
       libexec/"tmux-whisper",
       DICTATE_LIB_PATH:         libexec/"dictate-lib.sh",
-      DICTATE_INTERNAL_LIB_DIR: libexec/"tmux-whisper-lib"
+      DICTATE_INTERNAL_LIB_DIR: libexec/"tmux-whisper-lib",
     )
     bin.install_symlink libexec/"dictate-lib.sh" => "dictate-lib.sh"
 
