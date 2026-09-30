@@ -1,8 +1,8 @@
 class TmuxWhisper < Formula
   desc "Tmux-first macOS voice dictation CLI with local ASR backends"
   homepage "https://github.com/ricardo-nth/tmux-whisper"
-  url "https://github.com/ricardo-nth/tmux-whisper/archive/refs/tags/v0.8.0.tar.gz"
-  sha256 "f568ae3451a4c099eae85d8c15dfb9c8d042eb0837014bab1b84309bacb5ad7a"
+  url "https://github.com/ricardo-nth/tmux-whisper/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "3012f39513cf50516411828730b786c393ff1792b84b55c971123f8c26f00d3d"
   license "MIT"
 
   depends_on :macos
@@ -16,7 +16,7 @@ class TmuxWhisper < Formula
     )
     bin.install_symlink libexec/"dictate-lib.sh" => "dictate-lib.sh"
 
-    pkgshare.install "config", "integrations", "assets", "tools"
+    pkgshare.install "config", "integrations", "assets", "tools", "tmux-whisperd"
     pkgshare.install "install.sh", "bootstrap.sh", "README.md", "CHANGELOG.md"
   end
 
